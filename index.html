@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixBuddy - Your DIY Home Repair Guide</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>FixBuddy</h1>
+            <p>Your trusted companion for DIY home repairs</p>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for repairs..." aria-label="Search repairs">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro mb-4 animate-fade-in">
+            <div class="card">
+                <h2><i class="fas fa-tools"></i> Welcome to FixBuddy</h2>
+                <p>Find step-by-step guides for common household repairs. Save money and learn new skills with our detailed instructions and safety tips.</p>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="grid">
+                <!-- Furniture Category -->
+                <div class="category-card animate-fade-in" data-repair-id="furniture">
+                    <div class="category-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3>Furniture Fixes</h3>
+                    <p>Repair and restore your furniture to its former glory</p>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="pages/fix-wobbly-chair.html" class="nav-link" data-tooltip="15-30 minutes repair">
+                                <i class="fas fa-chair"></i> Fix Wobbly Chair
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/repair-scratches.html" class="nav-link" data-tooltip="20-40 minutes repair">
+                                <i class="fas fa-paint-brush"></i> Repair Scratches
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/reattach-chair-legs.html" class="nav-link" data-tooltip="30-45 minutes repair">
+                                <i class="fas fa-wrench"></i> Reattach Chair Legs
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="favorite-button" onclick="addToFavorites('furniture')" aria-label="Add to favorites">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+                <!-- Electrical Category -->
+                <div class="category-card animate-fade-in" data-repair-id="electrical">
+                    <div class="category-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Electrical Fixes</h3>
+                    <p>Safe solutions for common electrical problems</p>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="pages/replace-light-switch.html" class="nav-link" data-tooltip="15-30 minutes repair">
+                                <i class="fas fa-toggle-on"></i> Replace Light Switch
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/fix-loose-outlet.html" class="nav-link" data-tooltip="20-40 minutes repair">
+                                <i class="fas fa-plug"></i> Fix Loose Outlet
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/reset-circuit-breaker.html" class="nav-link" data-tooltip="30-45 minutes repair">
+                                <i class="fas fa-power-off"></i> Reset Circuit Breaker
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="favorite-button" onclick="addToFavorites('electrical')" aria-label="Add to favorites">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+                <!-- Plumbing Category -->
+                <div class="category-card animate-fade-in" data-repair-id="plumbing">
+                    <div class="category-icon">
+                        <i class="fas fa-faucet"></i>
+                    </div>
+                    <h3>Plumbing Issues</h3>
+                    <p>Solutions for leaks, clogs, and water pressure problems</p>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="pages/fix-leaky-faucet.html" class="nav-link" data-tooltip="15-30 minutes repair">
+                                <i class="fas fa-tint"></i> Fix Leaky Faucet
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/unclog-drain.html" class="nav-link" data-tooltip="20-40 minutes repair">
+                                <i class="fas fa-water"></i> Unclog Drain
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/fix-running-toilet.html" class="nav-link" data-tooltip="30-45 minutes repair">
+                                <i class="fas fa-toilet"></i> Fix Running Toilet
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="favorite-button" onclick="addToFavorites('plumbing')" aria-label="Add to favorites">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+                <!-- Flooring Category -->
+                <div class="category-card animate-fade-in" data-repair-id="flooring">
+                    <div class="category-icon">
+                        <i class="fas fa-border-all"></i>
+                    </div>
+                    <h3>Flooring Problems</h3>
+                    <p>Repair and maintain different types of flooring</p>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="pages/fix-squeaky-floor.html" class="nav-link" data-tooltip="15-30 minutes repair">
+                                <i class="fas fa-volume-up"></i> Fix Squeaky Floor
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/repair-laminate-floor.html" class="nav-link" data-tooltip="20-40 minutes repair">
+                                <i class="fas fa-layer-group"></i> Repair Laminate Floor
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/fix-carpet-stains.html" class="nav-link" data-tooltip="30-45 minutes repair">
+                                <i class="fas fa-brush"></i> Fix Carpet Stains
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="favorite-button" onclick="addToFavorites('flooring')" aria-label="Add to favorites">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+                <!-- Doors & Windows Category -->
+                <div class="category-card animate-fade-in" data-repair-id="doors-windows">
+                    <div class="category-icon">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <h3>Door & Window Repairs</h3>
+                    <p>Fix common door and window problems</p>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="pages/fix-squeaky-door.html" class="nav-link" data-tooltip="15-30 minutes repair">
+                                <i class="fas fa-door-closed"></i> Fix Squeaky Door
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/fix-stuck-window.html" class="nav-link" data-tooltip="20-40 minutes repair">
+                                <i class="fas fa-window-maximize"></i> Fix Stuck Window
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/fix-door-lock.html" class="nav-link" data-tooltip="30-45 minutes repair">
+                                <i class="fas fa-lock"></i> Fix Door Lock
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="favorite-button" onclick="addToFavorites('doors-windows')" aria-label="Add to favorites">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 FixBuddy - Your DIY Home Repair Guide</p>
+            <a href="#" class="btn">Back to Top</a>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-button" aria-label="Toggle mobile menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <nav>
+            <ul>
+                <li><a href="pages/furniture-fixes.html">Furniture Fixes</a></li>
+                <li><a href="pages/electrical-fixes.html">Electrical Fixes</a></li>
+                <li><a href="pages/plumbing-issues.html">Plumbing Issues</a></li>
+                <li><a href="pages/door-window-repairs.html">Door & Window</a></li>
+                <li><a href="pages/flooring-problems.html">Flooring Problems</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
