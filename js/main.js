@@ -146,20 +146,25 @@ function initializeTimeEstimates() {
 
 // Mobile menu handling
 function setupMobileMenu() {
-    const menuButton = document.querySelector('.mobile-menu-button');
+    const menuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
-
-    if (menuButton && mobileMenu) {
-        menuButton.addEventListener('click', () => {
+    
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('active');
-            menuButton.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+            
+            // Toggle aria-expanded
+            const isExpanded = menuBtn.classList.contains('active');
+            menuBtn.setAttribute('aria-expanded', isExpanded);
         });
-
+        
         // Close menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (!mobileMenu.contains(e.target) && !menuButton.contains(e.target)) {
+            if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
                 mobileMenu.classList.remove('active');
-                menuButton.classList.remove('active');
+                menuBtn.classList.remove('active');
+                menuBtn.setAttribute('aria-expanded', 'false');
             }
         });
     }
