@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset a Circuit Breaker - FixBuddy</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e8f5e9;
+        }
+        h1 {
+            color: #2E7D32;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #1B5E20;
+            font-size: 1.5em;
+            margin: 25px 0 15px;
+        }
+        .info-box {
+            background: #f8faf9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #4CAF50;
+        }
+        .tools-list, .steps-list {
+            padding-left: 20px;
+        }
+        .tools-list li, .steps-list li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .steps-list li {
+            margin-bottom: 20px;
+        }
+        .danger {
+            background: #ffebee;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #f44336;
+        }
+        .danger strong {
+            color: #c62828;
+        }
+        .warning {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9800;
+        }
+        .warning strong {
+            color: #e65100;
+        }
+        .tip-box {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #2196F3;
+        }
+        .tip-box strong {
+            color: #1565C0;
+        }
+        .video-container {
+            background: #f8faf9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .video-container a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .video-container a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #e8f5e9;
+            border-radius: 8px;
+            color: #4CAF50;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            background: #c8e6c9;
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Reset a Circuit Breaker</h1>
+            <p>Safely restore power after a circuit breaker trip</p>
+        </div>
+
+        <div class="danger">
+            <strong>⚡ ELECTRICAL SAFETY WARNING:</strong>
+            <ul>
+                <li>Never reset a breaker that keeps tripping without finding the cause</li>
+                <li>Stand to the side of the panel when resetting breakers</li>
+                <li>Keep the area around electrical panel dry and clear</li>
+                <li>If you smell burning or see damage, call an electrician immediately</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h2>🛠️ Tools Needed</h2>
+            <ul class="tools-list">
+                <li>Flashlight</li>
+                <li>Circuit directory/map (if available)</li>
+                <li>Rubber-soled shoes</li>
+                <li>Dry hands and environment</li>
+            </ul>
+            <p><strong>Estimated Time:</strong> 5-10 minutes</p>
+        </div>
+
+        <div class="warning">
+            <strong>⚠️ Common Causes of Tripped Breakers:</strong>
+            <ul>
+                <li>Too many devices on one circuit</li>
+                <li>Short circuit in wiring or device</li>
+                <li>Ground fault</li>
+                <li>Faulty appliance</li>
+                <li>Circuit overload</li>
+            </ul>
+        </div>
+
+        <h2>📝 Step-by-Step Instructions</h2>
+        <ol class="steps-list">
+            <li>Safety preparation:
+                <ul>
+                    <li>Put on rubber-soled shoes</li>
+                    <li>Ensure hands are dry</li>
+                    <li>Clear area in front of panel</li>
+                </ul>
+            </li>
+            <li>Locate tripped breaker:
+                <ul>
+                    <li>Look for breaker in "OFF" position</li>
+                    <li>Check circuit directory</li>
+                    <li>Note which devices lost power</li>
+                </ul>
+            </li>
+            <li>Reduce circuit load:
+                <ul>
+                    <li>Unplug devices on affected circuit</li>
+                    <li>Turn off light switches</li>
+                    <li>Identify potential overload causes</li>
+                </ul>
+            </li>
+            <li>Reset the breaker:
+                <ul>
+                    <li>Push breaker fully to OFF position</li>
+                    <li>Wait 30 seconds</li>
+                    <li>Firmly push to ON position</li>
+                </ul>
+            </li>
+            <li>Test and monitor:
+                <ul>
+                    <li>Gradually reconnect devices</li>
+                    <li>Monitor for additional trips</li>
+                    <li>Note any problems</li>
+                </ul>
+            </li>
+        </ol>
+
+        <div class="tip-box">
+            <strong>💡 Prevention Tips:</strong>
+            <ul>
+                <li>Map your circuits and label the panel</li>
+                <li>Distribute heavy loads across circuits</li>
+                <li>Keep track of each circuit's capacity</li>
+                <li>Replace aging circuit breakers</li>
+            </ul>
+        </div>
+
+        <div class="warning">
+            <strong>⚠️ When to Call an Electrician:</strong>
+            <ul>
+                <li>Breaker trips immediately after reset</li>
+                <li>Frequent or multiple breaker trips</li>
+                <li>Signs of burning or damage</li>
+                <li>Hot breaker panel</li>
+                <li>Buzzing or arcing sounds</li>
+            </ul>
+        </div>
+
+        <div class="video-container">
+            <h2>📹 Video Tutorial</h2>
+            <p>Watch our detailed video guide on safely resetting circuit breakers</p>
+            <a href="#" target="_blank">View Tutorial →</a>
+        </div>
+
+        <a href="electrical-fixes.html" class="back-link">← Back to Electrical Fixes</a>
+    </div>
+</body>
+</html>
