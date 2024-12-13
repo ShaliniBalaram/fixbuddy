@@ -21,7 +21,6 @@ FixBuddy is a modern, interactive web application designed to help users tackle 
 - **Modern Interface**: Clean, intuitive design
 - **Interactive Cards**: Smooth animations and transitions
 - **Tooltips**: Helpful information on hover
-- **Social Sharing**: Share repair guides easily
 - **Mobile Menu**: Touch-friendly navigation
 
 ## Technologies Used

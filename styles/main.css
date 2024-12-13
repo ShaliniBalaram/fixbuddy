@@ -200,6 +200,8 @@ body {
     padding: 0.5rem 1rem;
     border-radius: var(--radius-sm);
     transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 1rem;
 }
 
 .footer a:hover {
@@ -399,24 +401,6 @@ p {
 }
 
 .favorite-button:hover {
-    transform: scale(1.2);
-}
-
-/* Social Links */
-.social-links {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin: 1rem 0;
-}
-
-.social-link {
-    color: var(--text-white);
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
-}
-
-.social-link:hover {
     transform: scale(1.2);
 }
 
