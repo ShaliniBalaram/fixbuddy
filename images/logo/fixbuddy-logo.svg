@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="200" height="50" viewBox="0 0 200 50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg width="240" height="60" viewBox="0 0 240 60" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <!-- Background -->
-    <rect x="0" y="0" width="200" height="50" rx="8" fill="#2c3e50"/>
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+        </linearGradient>
+    </defs>
     
-    <!-- Wrench icon -->
-    <path d="M30 15 C28 15 26 16 25 18 L15 35 C14 37 14 39 15 41 C16 43 18 44 20 44 C22 44 24 43 25 41 L35 24 C36 22 36 20 35 18 C34 16 32 15 30 15 Z" fill="#3498db"/>
+    <!-- Tools Group -->
+    <g transform="translate(20, 15)">
+        <!-- Wrench -->
+        <path d="M25 5 C22 5 19 6.5 17 9 L12 16 C10 19 10 23 12 26 C14 29 17 30 20 30 C23 30 26 29 28 26 L33 19 C35 16 35 12 33 9 C31 6.5 28 5 25 5 Z" fill="#3498db">
+            <animate attributeName="fill" values="#3498db;#2980b9;#3498db" dur="3s" repeatCount="indefinite"/>
+        </path>
+        <!-- Hammer -->
+        <path d="M40 8 L45 3 L48 6 L43 11 L45 13 L35 23 L33 21 L43 11 L40 8" fill="#e74c3c">
+            <animate attributeName="fill" values="#e74c3c;#c0392b;#e74c3c" dur="3s" repeatCount="indefinite"/>
+        </path>
+    </g>
     
-    <!-- Text "Fix" -->
-    <text x="55" y="33" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#3498db">Fix</text>
+    <!-- Text "Fix" with gradient -->
+    <defs>
+        <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <text x="80" y="38" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="url(#textGradient)" style="filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3))">Fix</text>
     
     <!-- Text "Buddy" -->
-    <text x="100" y="33" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff">Buddy</text>
+    <text x="135" y="38" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff" style="filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3))">Buddy</text>
+    
+    <!-- Tagline -->
+    <text x="85" y="52" font-family="Arial, sans-serif" font-size="12" fill="#95a5a6">Your DIY Repair Companion</text>
 </svg>
