@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" viewBox="0 0 200 50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect x="0" y="0" width="200" height="50" rx="8" fill="#2c3e50"/>
+    
+    <!-- Wrench icon -->
+    <path d="M30 15 C28 15 26 16 25 18 L15 35 C14 37 14 39 15 41 C16 43 18 44 20 44 C22 44 24 43 25 41 L35 24 C36 22 36 20 35 18 C34 16 32 15 30 15 Z" fill="#3498db"/>
+    
+    <!-- Text "Fix" -->
+    <text x="55" y="33" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#3498db">Fix</text>
+    
+    <!-- Text "Buddy" -->
+    <text x="100" y="33" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff">Buddy</text>
+</svg>
