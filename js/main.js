@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeTooltips();
     initializeTimeEstimates();
     setupMobileMenu();
+    setupBackToTop();
 });
 
 // Search functionality
@@ -218,6 +219,20 @@ function shareRepairGuide(title, url) {
         document.body.removeChild(tempInput);
         
         alert('Link copied to clipboard!');
+    }
+}
+
+// Back to Top functionality
+function setupBackToTop() {
+    const backToTopButton = document.querySelector('.footer .btn');
+    if (backToTopButton) {
+        backToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
     }
 }
 
