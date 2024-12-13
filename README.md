@@ -13,7 +13,6 @@ FixBuddy is a modern, interactive web application designed to help users tackle 
 
 ### Interactive Features
 - **Real-time Search**: Instantly find the repairs you need
-- **Difficulty Filters**: Sort repairs by skill level
 - **Time Estimates**: Know how long each repair takes
 - **Favorites System**: Save repairs for quick access
 - **Mobile-Responsive**: Perfect experience on any device
@@ -69,11 +68,6 @@ fixbuddy/
 - Real-time filtering of repair guides
 - Highlights matching results
 - Search across all categories
-
-### Difficulty System
-- Easy: Basic tools, minimal experience needed
-- Medium: Some tools and basic DIY knowledge required
-- Hard: Advanced tools or techniques needed
 
 ### Mobile Features
 - Bottom navigation menu
