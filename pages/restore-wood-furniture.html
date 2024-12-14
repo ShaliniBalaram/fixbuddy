@@ -80,6 +80,45 @@
             color: white;
             transform: translateY(-2px);
         }
+        .video-container {
+            margin: 20px 0;
+        }
+        .video-container h2 {
+            margin-top: 0;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            margin: 20px 0;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+        .video-credit {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+        .warning-box {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9800;
+        }
+        .warning-box i {
+            color: #ff9800;
+            margin-right: 10px;
+        }
+        .warning-box strong {
+            color: #e65100;
+        }
     </style>
 </head>
 <body>
@@ -104,13 +143,22 @@
                    4. Let it dry completely<br>
                    5. Apply wood polish for protection and shine</p>
             </div>
-            <div class="info-item">
-                <strong>🎥 Video Solution:</strong><br>
-                <a href="https://www.youtube.com/watch?v=example5" target="_blank" class="video-link">Watch Tutorial</a>
+        </div>
+        <div class="video-container">
+            <h2>📹 Video Tutorial</h2>
+            <p>Watch our detailed video guide on restoring wood furniture</p>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bZq_GqKUv7o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-credit">Video: "How to Restore Old Wooden Furniture - Complete Guide"</p>
+            <div class="warning-box">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div>
+                    <strong>Warning:</strong> Always work in a well-ventilated area when using strippers, stains, or finishes. Wear appropriate protective gear including gloves and a respirator mask when working with chemicals.
+                </div>
             </div>
         </div>
         <a href="furniture-fixes.html" class="back-link">← Back to Furniture Fixes</a>
     </div>
 </body>
 </html>
-

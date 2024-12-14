@@ -109,6 +109,39 @@
             background: #c8e6c9;
             transform: translateX(-5px);
         }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            margin: 20px 0;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+        .video-credit {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+        .warning-box {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9800;
+        }
+        .warning-box i {
+            color: #ff9800;
+            margin-right: 10px;
+        }
+        .warning-box strong {
+            color: #e65100;
+        }
     </style>
 </head>
 <body>
@@ -233,11 +266,19 @@
         <div class="video-container">
             <h2>📹 Video Tutorial</h2>
             <p>Watch our detailed video guide on fixing a running toilet</p>
-            <a href="#" target="_blank">View Tutorial →</a>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qwzVpY31r_8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-credit">Video: "How to Fix a Running Toilet - No Tools Required"</p>
+            <div class="warning-box">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div>
+                    <strong>Warning:</strong> Turn off the water supply before starting any repairs. Be careful not to overtighten parts as this can cause damage. If you notice any cracks in the porcelain or complex internal issues, contact a professional plumber.
+                </div>
+            </div>
         </div>
 
         <a href="plumbing-issues.html" class="back-link">← Back to Plumbing Issues</a>
     </div>
 </body>
 </html>
-

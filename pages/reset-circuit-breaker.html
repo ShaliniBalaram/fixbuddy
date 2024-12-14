@@ -112,6 +112,39 @@
             background: #c8e6c9;
             transform: translateX(-5px);
         }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            margin: 20px 0;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+        .video-credit {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+        .warning-box {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9800;
+        }
+        .warning-box i {
+            color: #ff9800;
+            margin-right: 10px;
+        }
+        .warning-box strong {
+            color: #e65100;
+        }
     </style>
 </head>
 <body>
@@ -216,11 +249,19 @@
         <div class="video-container">
             <h2>📹 Video Tutorial</h2>
             <p>Watch our detailed video guide on safely resetting circuit breakers</p>
-            <a href="#" target="_blank">View Tutorial →</a>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YJZ6JBTizNM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-credit">Video: "How to Reset Your Circuit Breaker - Safety Guide"</p>
+            <div class="warning-box">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div>
+                    <strong>Warning:</strong> Never reset a circuit breaker without first identifying and removing the cause of the trip. If a circuit breaker continues to trip, this indicates a serious electrical issue that requires professional attention. Never attempt to modify or repair the circuit breaker itself.
+                </div>
+            </div>
         </div>
 
         <a href="electrical-fixes.html" class="back-link">← Back to Electrical Fixes</a>
     </div>
 </body>
 </html>
-
