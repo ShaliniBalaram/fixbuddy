@@ -4,112 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fix a Wobbly Chair - FixBuddy</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #e8f5e9;
-        }
-        h1 {
-            color: #2E7D32;
-            font-size: 2.2em;
-            margin-bottom: 10px;
-        }
-        .info-section {
-            background: #f8faf9;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            border-left: 4px solid #4CAF50;
-        }
-        .info-item {
-            margin: 15px 0;
-        }
-        .info-item strong {
-            color: #1B5E20;
-            font-size: 1.1em;
-        }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        a:hover {
-            color: #2E7D32;
-            text-decoration: none;
-        }
-        .back-link {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 10px 20px;
-            background: #e8f5e9;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-        }
-        .back-link:hover {
-            background: #c8e6c9;
-            transform: translateX(-5px);
-        }
-        .video-link {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #4CAF50;
-            color: white;
-            border-radius: 8px;
-            margin-top: 10px;
-            transition: all 0.3s ease;
-        }
-        .video-link:hover {
-            background: #388E3C;
-            color: white;
-            transform: translateY(-2px);
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Fix a Wobbly Chair</h1>
-        </div>
-        <div class="info-section">
-            <div class="info-item">
-                <strong>🛠️ Tools Needed:</strong>
-                <p>Screwdriver, Wood Glue</p>
-            </div>
-            <div class="info-item">
-                <strong>⏱️ Estimated Time to Fix:</strong>
-                <p>15 minutes</p>
-            </div>
-            <div class="info-item">
-                <strong>📝 Instructions:</strong>
-                <p>1. Identify which leg is causing the wobble<br>
-                   2. Check for loose screws and tighten them<br>
-                   3. If needed, apply wood glue to loose joints<br>
-                   4. Allow glue to dry completely before use</p>
-            </div>
-            <div class="info-item">
-                <strong>🎥 Video Solution:</strong><br>
-                <a href="https://www.youtube.com/watch?v=5evr0Nk5cQ4" target="_blank" class="video-link">Watch Tutorial</a>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo/fixbuddy-logo.svg" alt="FixBuddy - Your DIY Home Repair Guide" height="60">
+                </a>
             </div>
         </div>
-        <a href="furniture-fixes.html" class="back-link">← Back to Furniture Fixes</a>
-    </div>
+    </header>
+
+    <main class="container">
+        <article class="repair-guide">
+            <h1><i class="fas fa-chair"></i> How to Fix a Wobbly Chair</h1>
+            
+            <section class="intro">
+                <p>A wobbly chair is not only annoying but can also be dangerous. Follow this guide to stabilize your chair quickly and safely.</p>
+            </section>
+
+            <section class="video-tutorial">
+                <h2><i class="fas fa-video"></i> Video Tutorial</h2>
+                <div class="video-container">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/TXqwJNcX8AA" 
+                            title="How to Fix a Wobbly Chair" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="video-credit">Video by: Fix This House</p>
+            </section>
+
+            <section class="tools-needed">
+                <h2><i class="fas fa-tools"></i> Tools and Materials</h2>
+                <ul>
+                    <li>Wood glue</li>
+                    <li>Screwdriver</li>
+                    <li>Sandpaper</li>
+                    <li>Wood shims (if needed)</li>
+                    <li>Clamps</li>
+                </ul>
+            </section>
+
+            <section class="steps">
+                <h2><i class="fas fa-list-ol"></i> Step-by-Step Guide</h2>
+                <ol>
+                    <li>
+                        <h3>Identify the Problem</h3>
+                        <p>Check which leg is causing the wobble and inspect all joints.</p>
+                    </li>
+                    <li>
+                        <h3>Tighten All Screws</h3>
+                        <p>Use a screwdriver to tighten any loose screws or bolts.</p>
+                    </li>
+                    <li>
+                        <h3>Check for Uneven Legs</h3>
+                        <p>Place the chair on a flat surface and identify any legs that don't touch the ground.</p>
+                    </li>
+                    <li>
+                        <h3>Fix Loose Joints</h3>
+                        <p>Apply wood glue to loose joints and clamp until dry.</p>
+                    </li>
+                    <li>
+                        <h3>Add Shims if Needed</h3>
+                        <p>Use wood shims to level any remaining unevenness.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="tips">
+                <h2><i class="fas fa-lightbulb"></i> Pro Tips</h2>
+                <ul>
+                    <li>Work on a flat surface to accurately assess the wobble</li>
+                    <li>Let glue dry completely (24 hours) before using the chair</li>
+                    <li>Consider adding felt pads to protect your floor</li>
+                </ul>
+            </section>
+
+            <section class="safety">
+                <h2><i class="fas fa-shield-alt"></i> Safety Notes</h2>
+                <ul>
+                    <li>Wear gloves when handling sharp tools</li>
+                    <li>Work in a well-ventilated area when using glue</li>
+                    <li>Test the chair's stability before regular use</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p> 2024 FixBuddy - Your DIY Home Repair Guide</p>
+            <a href="#" class="btn">Back to Top</a>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>
-
