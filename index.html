@@ -16,10 +16,41 @@
             <div class="logo">
                 <img src="images/logo/fixbuddy-logo.svg" alt="FixBuddy - Your DIY Home Repair Guide" height="60">
             </div>
-            <div class="search-container">
-                <input type="text" id="search-input" placeholder="Search for repairs..." aria-label="Search repairs">
-                <i class="fas fa-search search-icon"></i>
-            </div>
+            <nav class="main-nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Plumbing Repairs <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="pages/fix-leaky-faucet.html">Fix Leaky Faucet</a>
+                        <a href="pages/unclog-drain.html">Unclog Drain</a>
+                        <a href="pages/fix-running-toilet.html">Fix Running Toilet</a>
+                        <a href="pages/fix-low-pressure.html">Fix Low Water Pressure</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Furniture Repairs <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="pages/fix-wobbly-chair.html">Fix Wobbly Chair</a>
+                        <a href="pages/restore-wood-furniture.html">Restore Wood Furniture</a>
+                        <a href="pages/reattach-chair-legs.html">Reattach Chair Legs</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Floor & Wall <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="pages/fix-squeaky-floor.html">Fix Squeaky Floor</a>
+                        <a href="pages/repair-tile-grout.html">Repair Tile Grout</a>
+                        <a href="pages/fix-carpet-stains.html">Fix Carpet Stains</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Electrical <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="pages/fix-loose-outlet.html">Fix Loose Outlet</a>
+                        <a href="pages/repair-ceiling-fan.html">Repair Ceiling Fan</a>
+                        <a href="pages/replace-light-switch.html">Replace Light Switch</a>
+                    </div>
+                </div>
+            </nav>
             <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle mobile menu">
                 <i class="fas fa-bars"></i>
             </button>
@@ -210,5 +241,6 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>

@@ -4,159 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fix a Leaky Faucet - FixBuddy</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #e8f5e9;
-        }
-        h1 {
-            color: #2E7D32;
-            font-size: 2.2em;
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: #1B5E20;
-            font-size: 1.5em;
-            margin: 25px 0 15px;
-        }
-        .info-box {
-            background: #f8faf9;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-left: 4px solid #4CAF50;
-        }
-        .tools-list, .steps-list {
-            padding-left: 20px;
-        }
-        .tools-list li, .steps-list li {
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-        .steps-list li {
-            margin-bottom: 20px;
-        }
-        .warning {
-            background: #fff3e0;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-left: 4px solid #ff9800;
-        }
-        .warning strong {
-            color: #e65100;
-        }
-        .tip-box {
-            background: #e3f2fd;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-left: 4px solid #2196F3;
-        }
-        .tip-box strong {
-            color: #1565C0;
-        }
-        .video-container {
-            background: #f8faf9;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            text-align: center;
-        }
-        .video-container a {
-            color: #4CAF50;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .video-container a:hover {
-            text-decoration: underline;
-        }
-        .back-link {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 10px 20px;
-            background: #e8f5e9;
-            border-radius: 8px;
-            color: #4CAF50;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        .back-link:hover {
-            background: #c8e6c9;
-            transform: translateX(-5px);
-        }
-        .warning-box {
-            background: #fff3e0;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-left: 4px solid #ff9800;
-        }
-        .warning-box strong {
-            color: #e65100;
-        }
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            margin: 20px 0;
-        }
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
-        }
-        .video-credit {
-            font-style: italic;
-            color: #666;
-            margin-top: 10px;
-        }
-        .warning-box i {
-            color: #ff9800;
-            margin-right: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo/fixbuddy-logo.svg" alt="FixBuddy" height="60">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="repair-guide">
+        <div class="repair-header">
             <h1>Fix a Leaky Faucet</h1>
-            <p>Stop that annoying drip and save water</p>
         </div>
 
-        <div class="warning">
-            <strong>⚠️ Before Starting:</strong>
+        <div class="tab-container">
+            <button class="tab-button active" onclick="showTab('video')">Video Guides</button>
+            <button class="tab-button" onclick="showTab('tools')">Tools & Materials</button>
+            <button class="tab-button" onclick="showTab('steps')">Fix Steps</button>
+            <button class="tab-button" onclick="showTab('problems')">Common Problems</button>
+            <button class="tab-button" onclick="showTab('tips')">Maintenance Tips</button>
+        </div>
+
+        <div id="video" class="tab-content">
+            <h2>Video Guides</h2>
+            <div class="video-container">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/F5lqBKeWJ8c" frameborder="0" allowfullscreen></iframe>
+                <p class="video-credit">Video: How to Fix a Leaky Faucet - Step by Step Guide</p>
+            </div>
+            <div class="video-container">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/example2" frameborder="0" allowfullscreen></iframe>
+                <p class="video-credit">Video: DIY Faucet Repair: Beginner Tips</p>
+            </div>
+        </div>
+
+        <div id="tools" class="tab-content" style="display: none;">
+            <h2>Tools & Materials Needed</h2>
             <ul>
-                <li>Turn off water supply under sink</li>
-                <li>Cover drain to prevent losing small parts</li>
-                <li>Take photos of faucet assembly before disassembly</li>
-                <li>Have a towel ready for water spillage</li>
-            </ul>
-        </div>
-
-        <div class="info-box">
-            <h2>🛠️ Tools Needed</h2>
-            <ul class="tools-list">
                 <li>Adjustable wrench</li>
                 <li>Phillips and flathead screwdrivers</li>
                 <li>Replacement parts (O-rings, washers, cartridge)</li>
@@ -166,99 +55,99 @@
                 <li>Plumber's tape</li>
                 <li>Clean rags</li>
             </ul>
-            <p><strong>Estimated Time:</strong> 1-2 hours</p>
         </div>
 
-        <div class="tip-box">
-            <strong>💡 Types of Faucets:</strong>
+        <div id="steps" class="tab-content" style="display: none;">
+            <h2>Fix Steps</h2>
+            <ol>
+                <li>Preparation:
+                    <ul>
+                        <li>Turn off water valves</li>
+                        <li>Open faucet to release pressure</li>
+                        <li>Cover drain</li>
+                        <li>Gather all tools</li>
+                    </ul>
+                </li>
+                <li>Disassemble faucet:
+                    <ul>
+                        <li>Remove decorative cap</li>
+                        <li>Unscrew handle</li>
+                        <li>Remove cartridge/stem</li>
+                        <li>Note parts orientation</li>
+                    </ul>
+                </li>
+                <li>Inspect components:
+                    <ul>
+                        <li>Check O-rings and washers</li>
+                        <li>Look for mineral buildup</li>
+                        <li>Check cartridge condition</li>
+                        <li>Clean all parts</li>
+                    </ul>
+                </li>
+                <li>Replace worn parts:
+                    <ul>
+                        <li>Install new O-rings</li>
+                        <li>Replace washers</li>
+                        <li>Install new cartridge if needed</li>
+                        <li>Apply plumber's tape</li>
+                    </ul>
+                </li>
+                <li>Reassemble and test:
+                    <ul>
+                        <li>Reverse disassembly steps</li>
+                        <li>Turn water back on slowly</li>
+                        <li>Check for leaks</li>
+                        <li>Test water flow</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div id="problems" class="tab-content" style="display: none;">
+            <h2>Common Problems</h2>
             <ul>
-                <li>Compression (two handles)</li>
-                <li>Ball-type (single handle)</li>
-                <li>Cartridge (single or double handle)</li>
-                <li>Ceramic disk (single handle)</li>
+                <li>Worn out washers</li>
+                <li>Damaged O-rings</li>
+                <li>Corroded valve seat</li>
+                <li>Loose parts</li>
+                <li>Multiple leaks</li>
+                <li>Water pressure issues</li>
             </ul>
         </div>
 
-        <h2>📝 Step-by-Step Instructions</h2>
-        <ol class="steps-list">
-            <li>Preparation:
-                <ul>
-                    <li>Turn off water valves</li>
-                    <li>Open faucet to release pressure</li>
-                    <li>Cover drain</li>
-                    <li>Gather all tools</li>
-                </ul>
-            </li>
-            <li>Disassemble faucet:
-                <ul>
-                    <li>Remove decorative cap</li>
-                    <li>Unscrew handle</li>
-                    <li>Remove cartridge/stem</li>
-                    <li>Note parts orientation</li>
-                </ul>
-            </li>
-            <li>Inspect components:
-                <ul>
-                    <li>Check O-rings and washers</li>
-                    <li>Look for mineral buildup</li>
-                    <li>Check cartridge condition</li>
-                    <li>Clean all parts</li>
-                </ul>
-            </li>
-            <li>Replace worn parts:
-                <ul>
-                    <li>Install new O-rings</li>
-                    <li>Replace washers</li>
-                    <li>Install new cartridge if needed</li>
-                    <li>Apply plumber's tape</li>
-                </ul>
-            </li>
-            <li>Reassemble and test:
-                <ul>
-                    <li>Reverse disassembly steps</li>
-                    <li>Turn water back on slowly</li>
-                    <li>Check for leaks</li>
-                    <li>Test water flow</li>
-                </ul>
-            </li>
-        </ol>
-
-        <div class="tip-box">
-            <strong>💡 Pro Tips:</strong>
+        <div id="tips" class="tab-content" style="display: none;">
+            <h2>Maintenance Tips</h2>
             <ul>
+                <li>Regular cleaning</li>
+                <li>Gentle handle operation</li>
+                <li>Annual inspection</li>
+                <li>Immediate leak attention</li>
                 <li>Take pictures during disassembly for reference</li>
                 <li>Clean mineral deposits with vinegar</li>
                 <li>Replace all washers while you're in there</li>
                 <li>Keep spare parts for future repairs</li>
             </ul>
         </div>
+    </main>
 
-        <div class="warning">
-            <strong>⚠️ When to Call a Plumber:</strong>
-            <ul>
-                <li>Corroded or damaged valve seats</li>
-                <li>Cracked faucet body</li>
-                <li>Multiple leaks</li>
-                <li>Water pressure issues</li>
-            </ul>
-        </div>
-
-        <div class="video-container">
-            <h2>📹 Video Tutorial</h2>
-            <p>Watch our detailed video guide on fixing a leaky faucet</p>
-            <div class="video-wrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/F5lqBKeWJ8c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="video-credit">Video: "How to Fix a Leaky Faucet - Step by Step Guide"</p>
-            <div class="warning-box">
-                <i class="fas fa-exclamation-triangle"></i>
-                <div>
-                    <strong>Warning:</strong> Always turn off the water supply before starting any faucet repair. Keep track of all parts and their order during disassembly. If you encounter major issues or unusual plumbing configurations, consult a professional plumber.
-                </div>
-            </div>
-        </div>
-
-        <a href="plumbing-issues.html" class="back-link">← Back to Plumbing Issues</a>
-    </div>
+    <script>
+        function showTab(tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.style.display = 'none';
+            });
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabId).style.display = 'block';
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
 </html>
