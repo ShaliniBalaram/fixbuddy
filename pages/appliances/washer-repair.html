@@ -3,164 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fix Washer Problems - FixBuddy</title>
+    <title>Washer Repair Guide - Fix Buddy</title>
     <link rel="stylesheet" href="../../styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-content">
-            <div class="logo">
-                <a href="../../index.html">
-                    <img src="../../images/logo/fixbuddy-logo.svg" alt="FixBuddy" height="60">
-                </a>
-            </div>
-            <button class="mobile-menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav class="main-nav">
-                <div class="category-dropdown">
-                    <button class="category-btn">
-                        <i class="fas fa-wrench"></i>
-                        Plumbing
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="../plumbing/leaky-faucet.html">Leaky Faucet</a>
-                        <a href="../plumbing/clogged-drain.html">Clogged Drain</a>
-                        <a href="../plumbing/running-toilet.html">Running Toilet</a>
-                    </div>
-                </div>
-
-                <div class="category-dropdown">
-                    <button class="category-btn">
-                        <i class="fas fa-plug"></i>
-                        Electrical
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="../electrical/light-switch.html">Light Switch Issues</a>
-                        <a href="../electrical/outlet-repair.html">Outlet Not Working</a>
-                        <a href="../electrical/ceiling-fan.html">Ceiling Fan Problems</a>
-                    </div>
-                </div>
-
-                <div class="category-dropdown">
-                    <button class="category-btn">
-                        <i class="fas fa-couch"></i>
-                        Furniture
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="../furniture/wobbly-table.html">Wobbly Table/Chair</a>
-                        <a href="../furniture/drawer-repair.html">Stuck Drawer</a>
-                        <a href="../furniture/cabinet-hinge.html">Cabinet Hinge</a>
-                    </div>
-                </div>
-
-                <div class="category-dropdown">
-                    <button class="category-btn">
-                        <i class="fas fa-door-open"></i>
-                        Doors & Windows
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="../doors/squeaky-hinge.html">Squeaky Hinge</a>
-                        <a href="../doors/stuck-window.html">Stuck Window</a>
-                        <a href="../doors/door-lock.html">Door Lock Issues</a>
-                    </div>
-                </div>
-
-                <div class="category-dropdown">
-                    <button class="category-btn">
-                        <i class="fas fa-tools"></i>
-                        Appliances
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="washer-repair.html">Washer Problems</a>
-                        <a href="dryer-repair.html">Dryer Not Working</a>
-                        <a href="dishwasher.html">Dishwasher Issues</a>
-                    </div>
-                </div>
-            </nav>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="../../index.html">
+                <img src="../../images/logo.png" alt="Fix Buddy Logo">
+            </a>
         </div>
-    </header>
+        <div class="nav-menu">
+            <a href="../../index.html">Home</a>
+            <a href="../categories.html">Categories</a>
+            <a href="../about.html">About</a>
+        </div>
+    </nav>
 
-    <main class="repair-guide">
+    <div class="guide-container">
+        <div class="breadcrumb">
+            <a href="../../index.html"><i class="fas fa-home"></i></a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../categories.html">Categories</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="./index.html">Appliances</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Washer Repair</span>
+        </div>
+
         <div class="guide-header">
             <h1>How to Fix Common Washer Problems</h1>
-            <div class="difficulty-meter">
-                <span class="badge intermediate">Intermediate</span>
-                <span class="time-estimate"><i class="fas fa-clock"></i> 30-90 minutes</span>
-            </div>
-            <div class="guide-intro">
-                <p>Washing machine problems can disrupt your daily routine. Learn how to diagnose and fix common washer issues safely.</p>
-                <div class="warning-box">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <p>Always unplug the washer before attempting any repairs!</p>
-                </div>
+            <div class="guide-meta">
+                <span><i class="far fa-clock"></i> 30-90 minutes</span>
+                <span><i class="fas fa-tools"></i> Intermediate</span>
             </div>
         </div>
 
-        <section class="common-problems">
-            <h2>Common Problems & Solutions</h2>
-            
-            <div class="problem-cards">
-                <div class="problem-card">
-                    <h3>Washer Won't Drain</h3>
-                    <p>Standing water in the washer after a cycle is often due to drainage issues.</p>
-                    <div class="solution">
-                        <h4>Solution:</h4>
-                        <ol>
-                            <li>Check drain hose for kinks</li>
-                            <li>Clean drain pump filter</li>
-                            <li>Remove drain hose blockage</li>
-                            <li>Verify pump operation</li>
-                            <li>Test drain function</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="problem-card">
-                    <h3>Excessive Vibration</h3>
-                    <p>Unbalanced loads or improper leveling can cause violent shaking.</p>
-                    <div class="solution">
-                        <h4>Solution:</h4>
-                        <ol>
-                            <li>Level the washer</li>
-                            <li>Check shock absorbers</li>
-                            <li>Inspect suspension springs</li>
-                            <li>Balance the load</li>
-                            <li>Test spin cycle</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="problem-card">
-                    <h3>Not Filling with Water</h3>
-                    <p>When the washer isn't getting enough or any water.</p>
-                    <div class="solution">
-                        <h4>Solution:</h4>
-                        <ol>
-                            <li>Check water supply valves</li>
-                            <li>Clean inlet screens</li>
-                            <li>Inspect fill hoses</li>
-                            <li>Test water inlet valve</li>
-                            <li>Verify water pressure</li>
-                        </ol>
-                    </div>
-                </div>
+        <div class="guide-content">
+            <div class="guide-section">
+                <h2>Common Problems & Solutions</h2>
+                <ul class="guide-list">
+                    <li class="guide-item appliances">
+                        <a href="#washer-wont-drain">
+                            <i class="fas fa-water"></i>
+                            <div class="guide-item-content">
+                                <div class="guide-item-title">Washer Won't Drain</div>
+                                <p class="guide-item-description">Fix standing water and drainage issues in your washing machine</p>
+                                <span class="difficulty-badge difficulty-medium">Intermediate</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="guide-item appliances">
+                        <a href="#noisy-operation">
+                            <i class="fas fa-volume-up"></i>
+                            <div class="guide-item-content">
+                                <div class="guide-item-title">Noisy Operation</div>
+                                <p class="guide-item-description">Troubleshoot and fix unusual sounds during wash cycles</p>
+                                <span class="difficulty-badge difficulty-easy">Easy</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="guide-item appliances">
+                        <a href="#wont-spin">
+                            <i class="fas fa-sync"></i>
+                            <div class="guide-item-content">
+                                <div class="guide-item-title">Won't Spin or Agitate</div>
+                                <p class="guide-item-description">Resolve spinning and agitation problems in your washer</p>
+                                <span class="difficulty-badge difficulty-medium">Intermediate</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="guide-item appliances">
+                        <a href="#leaking">
+                            <i class="fas fa-tint"></i>
+                            <div class="guide-item-content">
+                                <div class="guide-item-title">Water Leaks</div>
+                                <p class="guide-item-description">Identify and fix water leaks to prevent damage</p>
+                                <span class="difficulty-badge difficulty-medium">Intermediate</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </section>
 
-        <section class="tools-materials">
-            <div class="tools-needed">
-                <h3>What You'll Need</h3>
-                <div class="tools-grid">
+            <div class="guide-section">
+                <h2>Required Tools</h2>
+                <div class="tool-list">
                     <div class="tool-item">
                         <i class="fas fa-wrench"></i>
-                        <span>Adjustable wrench</span>
+                        <span>Adjustable Wrench</span>
                     </div>
                     <div class="tool-item">
                         <i class="fas fa-screwdriver"></i>
@@ -174,38 +106,53 @@
                         <i class="fas fa-tools"></i>
                         <span>Pliers</span>
                     </div>
-                    <div class="tool-item">
-                        <i class="fas fa-hand-sparkles"></i>
-                        <span>Cleaning supplies</span>
+                </div>
+            </div>
+
+            <div class="guide-section">
+                <h2>Safety Precautions</h2>
+                <div class="alert alert-warning">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <div>
+                        <p><strong>Before starting any repairs:</strong></p>
+                        <ul>
+                            <li>Unplug the washer from the electrical outlet</li>
+                            <li>Turn off both hot and cold water supplies</li>
+                            <li>Keep work area dry and well-ventilated</li>
+                            <li>Wear appropriate safety gear</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section class="maintenance-tips">
-            <h2>Maintenance Tips</h2>
-            <div class="tips-container">
-                <div class="tip">
-                    <i class="fas fa-check-circle"></i>
-                    <p>Clean the drain pump filter monthly</p>
-                </div>
-                <div class="tip">
-                    <i class="fas fa-check-circle"></i>
-                    <p>Check hoses for wear every 6 months</p>
-                </div>
-                <div class="tip">
-                    <i class="fas fa-check-circle"></i>
-                    <p>Clean the drum regularly</p>
-                </div>
-                <div class="tip">
-                    <i class="fas fa-check-circle"></i>
-                    <p>Leave door open between uses to prevent mold</p>
+            <div class="guide-section" id="washer-wont-drain">
+                <h2>Fixing Drainage Issues</h2>
+                <div class="guide-content-block">
+                    <h3>Common Causes</h3>
+                    <ul class="step-list">
+                        <li>Kinked or clogged drain hose</li>
+                        <li>Blocked pump filter</li>
+                        <li>Faulty drain pump</li>
+                        <li>Improper drain hose installation</li>
+                    </ul>
+                    
+                    <h3>Solution Steps</h3>
+                    <ol class="step-list">
+                        <li>Check and straighten any kinks in the drain hose</li>
+                        <li>Locate and clean the drain pump filter</li>
+                        <li>Verify drain hose height (should be 24-96 inches)</li>
+                        <li>Test drain pump operation</li>
+                        <li>Clear any blockages in the drain system</li>
+                    </ol>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
 
-    <script src="../../js/repair-guide.js"></script>
-    <script src="../../js/navigation.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Fix Buddy. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
